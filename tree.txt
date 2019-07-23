@@ -1,0 +1,31 @@
+文件夹 PATH 列表
+卷序列号为 7ADD-A061
+D:.
+|   tree.txt
+|   
++---browser_es6
+|       index.html
+|       
++---webpack_babel_es6
+|   |   package.json
+|   |   webpack.config.js
+|   |   
+|   +---dist
+|   |       index.html
+|   |       main.bundle.js
+|   |       
+|   \---src
+|           index.js
+|           
+\---webpack_babel_runtime_es6
+    |   .babelrc
+    |   package.json
+    |   webpack.config.js
+    |   
+    +---dist
+    |       index.html
+    |       main.bundle.js
+    |       
+    \---src
+            index.js
+            

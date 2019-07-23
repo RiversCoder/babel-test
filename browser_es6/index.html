@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>browser es6</title>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+
+        <div id="output"></div>
+
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+        <script type="text/babel">
+        
+            let p = new Promise(function(resolve, reject){
+                //做一些异步操作
+                setTimeout(function(){
+                    console.log('执行完成Promise');
+                    resolve('要返回的数据可以任何数据例如接口返回数据');
+                }, 2000);
+            });
+            p.then(res => console.log(res));
+
+            const getMessage = () => "Hello Babel";
+            document.getElementById('output').innerHTML = getMessage();
+        </script>
+
+    </body>
+</html>
